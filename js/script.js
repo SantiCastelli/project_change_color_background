@@ -8,3 +8,9 @@ function getRandomColor() {
 
     return colors[indiceRandom]
 }
+
+let pintarBody = document.querySelector("#click--me") 
+
+pintarBody.addEventListener("click", function(){
+    document.querySelector("body").style.backgroundColor = getRandomColor()
+})
